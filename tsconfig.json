@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "target": "ES6",
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "forceConsistentCasingInFileNames": true,
+        "paths": {
+            "@types": ["types"]
+        }
+    },
+    "include": ["**/**/*", "*", "jest.config.ts", "types/**/*"]
+}
