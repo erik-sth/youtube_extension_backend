@@ -19,6 +19,7 @@
     "googleapis": "^144.0.0",
     "mongoose": "^8.6.1",
     "supertest": "^6.3.3",
+    "tsc": "^2.0.4",
     "winston": "^3.11.0"
   },
   "devDependencies": {
