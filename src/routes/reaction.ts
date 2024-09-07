@@ -21,7 +21,7 @@ router.get(
     '/:videoLink',
     validateVideoLink,
     async (req: Request, res: Response) => {
-        logger.info(`GET request for videoLink: ${req.params.videoLink}`);
+        logger.debug(`GET request for videoLink: ${req.params.videoLink}`);
 
         try {
             const decodedVideoLink = decodeURIComponent(req.params.videoLink);
