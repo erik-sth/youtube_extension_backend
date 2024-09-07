@@ -1,13 +1,12 @@
-// ./startup/cors.ts
 import cors, { CorsOptions } from 'cors';
 import { Express } from 'express';
 
 export function configureCors(app: Express) {
     // Cross-Origin Resource Sharing
     const corsOptions: CorsOptions = {
-        origin: process.env.ORIGIN,
+        origin: '*', // Allow all origins (useful for local development; not recommended for production)
         methods: ['GET', 'PATCH', 'DELETE', 'PUT', 'POST'],
-        allowedHeaders: [],
+        allowedHeaders: ['Content-Type'], // Add allowed headers if needed
         maxAge: 600,
     };
 
