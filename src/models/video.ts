@@ -18,4 +18,4 @@ const VideoSchema = new Schema<Video>({
 VideoSchema.index({ videoLink: 1 });
 
 // Create the Video model
-export const VideoModel = model<Video>('Video', VideoSchema);
+export const VideoModel = model<Video>('yt-react_video', VideoSchema);
