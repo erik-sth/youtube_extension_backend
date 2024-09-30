@@ -31,7 +31,6 @@ router.post('/webhook', (req, res) => {
         console.log(
             `New video uploaded: ${title} (Video ID: ${videoId}, Channel ID: ${channelId})`
         );
-        process.exit(1);
 
         // Process the video (e.g., notify users, update database, etc.)
         res.status(204).send(); // Respond with 204 No Content
